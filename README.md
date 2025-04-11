@@ -2,6 +2,12 @@
 
 This Python script allows you to fetch SMS messages from a ZTE modem and delete them automatically.
 
+### I can do same in ui so why this repository exists?
+
+I created this repository because I encountered performance issues with the ZTE modem's UI when trying to manage a large number of SMS messages. The modem's interface became unresponsive and failed to open the SMS inbox when there were too many messages.
+
+Despite being able to perform the same actions (like deleting messages) through the UI, the UI simply couldn't handle the large volume of messages, causing frustration and inefficiency. This repository provides an alternative way to interact with the modem via API calls, automating the process of managing and deleting SMS messages directly without relying on the UI.
+ 
 ## Requirements
 
 - Python 3.9 or higher
@@ -43,7 +49,10 @@ You can install the required dependencies by running the following command:
 
 ```bash
 pip install -r requirements.txt
+```
 
 
 ### Step 4: Run script
+```bash
 python delete_messages.py
+```
